@@ -64,15 +64,17 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 
+
 static const struct arg args[] = {
-	/* function format          argument */
-	{ battery_perc, "|BAT:%s%%",  "BAT1"  },
-	{ battery_state, " State:%s|", "BAT1"  },
-	{ run_command, " |VOL:%s|", "amixer sget Master | awk -F'[][]' '/%/ {print $2}' | head -n1" },
-	{ cpu_perc, " |CPU:%s%%",      NULL   },
-	{ run_command, " TEMP:%s|", "sensors | grep 'Core 0' | awk '{print $3}'" },
-	{ ram_perc, " |RAM:%s%%| ",      NULL   },
-        { run_command, "|DISK:%sGB| ", "df -h --output=avail / | tail -n 1 | awk '{print $1}'" },
-	{ datetime, "%s",          "%F %T" },
-	{ run_command, " ", NULL },
+    /* function format          argument */
+    { battery_perc, "|BAT:%s%%", "BAT1" },
+    { battery_state, " State:%s|", "BAT1" },
+    { run_command, " |VOL:%s|", "amixer sget Master | awk -F'[][]' '/%/ {print $2}' | head -n1" },
+    { cpu_perc, " |CPU:%s%%", NULL },
+    { run_command, " TEMP:%s|", "sensors | grep 'Core 0' | awk '{print $3}'" },
+    { ram_perc, " |RAM:%s%%|", NULL },
+    { run_command, "|DISK:%sGB|", "df -h --output=avail / | tail -n 1 | awk '{print $1}'" },
+    { kernel_release, " |KERNEL:%s| ", NULL }, // Added line for kernel version
+    { datetime, "%s", "%F %T" },
+    { run_command, "    ", NULL },
 };
