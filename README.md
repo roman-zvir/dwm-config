@@ -22,11 +22,11 @@ This repository contains my customized configuration files for [dwm](https://dwm
 
 ## Screenshots
 
-Add screenshots here to showcase your setup. For example:
+Screenshots to showcase setup:
 
-![image](https://github.com/user-attachments/assets/c06fe5fd-3b7f-4e99-8cc4-586488d5a57d)
+![image](https://github.com/user-attachments/assets/6406b303-e3e9-44cd-b85c-edbb126fc6a8)
 
-![image](https://github.com/user-attachments/assets/1904da73-0eb1-4d55-ba56-32c9ff7624b8)
+![image](https://github.com/user-attachments/assets/288b4adc-bba6-46f6-b34b-0e70dd9c6eee)
 
 
 ## Installation
