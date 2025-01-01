@@ -42,8 +42,8 @@ Screenshots to showcase setup:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/roman-zvir/dwm_config.git
-   cd dwm_config
+   git clone https://github.com/roman-zvir/dwm-config.git
+   cd dwm-config
    ```
 2. **Replace the `config.h` Files:**
    - Copy the provided `config.h` files into the respective directories of your dwm and slstatus installations:
